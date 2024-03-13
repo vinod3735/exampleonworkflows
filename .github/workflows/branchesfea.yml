@@ -1,16 +1,18 @@
 name: branches
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
       - "feature/*"
       - "feature/**"
+  
 jobs:
-  branches-triggring:
-    runs-on: ubuntu-latest
-    steps:
-      - name: echo string
-        run: echo " i am vinod reddy"
+    branches-triggring:
+      runs-on: ubuntu-latest
+      steps:
+        - name: echo string
+          run: echo " i am vinod reddy"
 
         
 
