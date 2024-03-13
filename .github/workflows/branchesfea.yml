@@ -1,11 +1,11 @@
 name: branches
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - "feature/*"
-      - "feature/**"
+ # push:
+    #branches:
+     # - main
+      #- "feature/*"
+      #- "feature/**"
   
 jobs:
     branches-triggring:
