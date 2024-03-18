@@ -13,6 +13,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: image pull
-        run: docker pull mattermost/actions-runner
+        run: docker pull ubuntu
           
   
