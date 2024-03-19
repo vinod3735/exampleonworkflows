@@ -19,8 +19,8 @@ jobs:
     - name: login to docker
       uses: docker/login-action@v3
       with:
-        username: ${{secretes.GITHUB_USERNAME}}
-        password: ${{secretes.GITHUB_TOCKEN}}
+        username: ${{secrets.GITHUB_USERNAME}}
+        password: ${{secrets.GITHUB_TOCKEN}}
 
     - name: Build and push
       uses: docker/build-push-action@v5
